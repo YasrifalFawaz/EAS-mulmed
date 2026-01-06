@@ -7,21 +7,22 @@ export default function Trailer() {
     "https://drive.google.com/file/d/1kEYbZcDmhnFDJRVhkIlVmwddyPPKmM_Q/preview";
 
   return (
-    <div className="page">
+    <div className="video-page">
+      <button
+        className="btn-home"
+        onClick={() => navigate("/home")}
+      >
+        ⬅ Home
+      </button>
+
       <div className="video-wrapper">
         <iframe
           src={trailerEmbed}
-          width="900"
-          height="500"
           allow="autoplay"
           allowFullScreen
           title="Trailer"
-        ></iframe>
+        />
       </div>
-
-      <button onClick={() => navigate("/home")}>
-        ⬅ Kembali
-      </button>
     </div>
   );
 }

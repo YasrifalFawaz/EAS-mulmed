@@ -1,6 +1,7 @@
 const branchingData = {
   intro: {
     video: "https://drive.google.com/file/d/11H5gJFofCBcRVIkk0bFK62MMTE53neBm/preview",
+    duration:26,
     choices: [
       { text: "Ikut membela", next: "duaA" },
       { text: "Ikut membully", next: "duaB" },
@@ -10,6 +11,7 @@ const branchingData = {
 
   duaA: {
     video: "https://drive.google.com/file/d/FOREST_ID/preview",
+    duration: 0,
     choices: [
       { text: "Masuk ke hutan", next: "forest" },
       { text: "Pergi ke kota", next: "city" },
@@ -19,6 +21,7 @@ const branchingData = {
 
   duaB: {
     video: "https://drive.google.com/file/d/CITY_ID/preview",
+    duration:0,
     choices: [
       { text: "Masuk gedung", next: "building" },
       { text: "Kembali", next: "intro" },
@@ -27,11 +30,13 @@ const branchingData = {
 
   duaC: {
     video: "https://drive.google.com/file/d/HOUSE_ID/preview",
+    duration:0,
     choices: [],
   },
 
   building: {
     video: "https://drive.google.com/file/d/BUILDING_ID/preview",
+    duration:0,
     choices: [],
   },
 };

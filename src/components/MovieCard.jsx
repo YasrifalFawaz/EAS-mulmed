@@ -13,25 +13,34 @@ export default function MovieCard() {
       />
 
       <div className="movie-content">
-        <h1>BERANI BICARA<br></br>
-            BERANI PEDULI
+        <h1 className="movie-title">
+          BERANI BICARA <br />
+          BERANI PEDULI
         </h1>
-        <p>
+
+        <p className="movie-desc">
           Ini adalah film interaktif tentang seorang mahasiswi yang dibuli
-          oleh kaka tingkatnya. Resti, teman dari mahasiswi tersebut, berusaha
-          untuk membantu temannya menghadapi masalah ini.Setiap pilihan 
-          yang diambil penonton akan mempengaruhi jalannya cerita. 
-          Akankah Resti berhasil membantu
-          temannya? Pilihan ada di tangan Anda!
+          oleh kakak tingkatnya. Resti, teman dari mahasiswi tersebut, berusaha
+          membantu temannya menghadapi masalah ini. Setiap pilihan yang diambil
+          penonton akan mempengaruhi jalannya cerita.  
+          <br /><br />
+          Akankah Resti berhasil membantu temannya?
+          <strong> Pilihan ada di tangan Anda!</strong>
         </p>
 
         <div className="movie-buttons">
-          <button className="btn-play" onClick={() => navigate("/video")}>
-            ▶ Play Video
+          <button
+            className="btn-play"
+            onClick={() => navigate("/video")}
+          >
+            ▶ Mulai Cerita
           </button>
 
-          <button className="btn-trailer" onClick={() => navigate("/trailer")}>
-            🎞 Tonton Trailer
+          <button
+            className="btn-trailer"
+            onClick={() => navigate("/trailer")}
+          >
+            🎞 Trailer
           </button>
         </div>
       </div>
