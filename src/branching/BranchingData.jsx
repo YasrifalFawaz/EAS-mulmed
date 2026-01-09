@@ -1,9 +1,9 @@
 const branchingData = {
   intro: {
-    video: "https://drive.google.com/file/d/11H5gJFofCBcRVIkk0bFK62MMTE53neBm/preview",
+    video: "https://drive.google.com/file/d/1C4QAw0nHw7F1QzcKFjIhRPLTY5i-JzQO/preview",
     duration:26,
     choices: [
-      { text: "Ikut membela", next: "duaA" },
+      { text: "Membela", next: "duaA" },
       { text: "Ikut membully", next: "duaB" },
       { text: "Diam saja", next: "duaC" },
     ],
@@ -13,28 +13,52 @@ const branchingData = {
     video: "https://drive.google.com/file/d/FOREST_ID/preview",
     duration: 0,
     choices: [
-      { text: "Masuk ke hutan", next: "forest" },
-      { text: "Pergi ke kota", next: "city" },
+      { text: "Tario Rio Pergi", next: "duaAsatu" },
+      { text: "Laporkan ke Satgas", next: "duaAdua" },
 
     ],
   },
 
-  duaB: {
+  duaAsatu: {
     video: "https://drive.google.com/file/d/CITY_ID/preview",
     duration:0,
     choices: [
-      { text: "Masuk gedung", next: "building" },
-      { text: "Kembali", next: "intro" },
+      { text: " ", next: "" },
+      { text: "", next: "" },
     ],
   },
 
-  duaC: {
+  duaAdua: {
     video: "https://drive.google.com/file/d/HOUSE_ID/preview",
     duration:0,
     choices: [],
   },
 
-  building: {
+  duaB: {
+    video: "https://drive.google.com/file/d/BUILDING_ID/preview",
+    duration:0,
+    choices: [
+      { text: "", next: "" },
+      { text: "", next: "" },
+    ],
+  },
+
+  duaC: {
+    video: "https://drive.google.com/file/d/CITY_ID/preview",
+    duration:0,
+    choices: [
+      { text: "Mengantar dan Meminta Maaf", next: "duaCsatu" },
+      { text: "Pergi Tanpa Membantu", next: "duaCdua" },
+    ],
+  },
+
+  duaCsatu: {
+    video: "https://drive.google.com/file/d/HOUSE_ID/preview",
+    duration:0,
+    choices: [],
+  },
+
+  duaCdua: {
     video: "https://drive.google.com/file/d/BUILDING_ID/preview",
     duration:0,
     choices: [],
